@@ -19,6 +19,25 @@
     font-style: normal;
 }
 
+article {
+    width: 80%;
+    min-width: 250px;
+    max-width: 800px;
+    margin: auto 20% auto 20%;
+}
+
+body {
+    max-width: 800px;
+    font-family: 'RobotoLight', sans-serif;
+    font-size: 100%;
+}
+
+footer {
+    width: 80%;
+    min-width: 250px;
+    max-width: 800px;
+}
+
 h1 {
     font-family: 'RobotoSlab', sans-serif;
     font-size: 225%;
@@ -31,7 +50,11 @@ h2 {
     line-height: 10%;
 }
 
-p {
-    font-family: 'RobotoLight', sans-serif;
-    font-size: 100%;
+
+hr {
+    color: #6D6E70
+}
+
+a {
+    color: #D68544;
 }
