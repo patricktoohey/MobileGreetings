@@ -1,7 +1,37 @@
-﻿body {
-    font-family: 'Segoe UI', sans-serif;
+﻿@font-face {
+    font-family: 'RobotoSlab';
+    src: url('fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-span {
-    font-style: italic;
+@font-face {
+    font-family: 'RobotoItalic';
+    src: url('fonts/Roboto-MediumItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoLight';
+    src: url('fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'RobotoSlab', sans-serif;
+    font-size: 225%;
+    line-height: 50%;
+}
+
+h2 {
+    font-family: 'RobotoItalic', sans-serif;
+    font-size: 131%;
+    line-height: 10%;
+}
+
+p {
+    font-family: 'RobotoLight', sans-serif;
+    font-size: 100%;
 }
