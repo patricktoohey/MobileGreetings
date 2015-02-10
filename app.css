@@ -20,11 +20,11 @@
 }
 
 article {
-    width: 80%;
+    margin: auto;
+    max-width: 800px;
 }
 
 body {
-    max-width: 1024px;
     font-family: 'RobotoLight', sans-serif;
     font-size: 100%;
 }
