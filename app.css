@@ -80,6 +80,12 @@ button {
     float: right;
 }
 
+@media screen and (max-width: 300px) {
+    button {
+        height: 5rem;
+    }
+}
+
 h1 {
     font-family: 'RobotoSlab', sans-serif;
     font-size: 225%;
