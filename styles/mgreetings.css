@@ -4,8 +4,9 @@
 }
 
 #container {
-    margin: auto;
-    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }
 
 #logo {
