@@ -21,6 +21,9 @@
     <Content Include="app.css" />
     <Content Include="images\logo.png" />
     <Content Include="index.html" />
+    <Content Include="styles\fonts.css" />
+    <Content Include="styles\mgreetings.css" />
+    <Content Include="styles\standard.css" />
     <Content Include="web.config">
       <SubType>Designer</SubType>
     </Content>

@@ -1,0 +1,84 @@
+﻿article {
+    margin: auto;
+    max-width: 600px;
+}
+
+body {
+    font-family: 'RobotoLight', sans-serif;
+    font-size: 100%;
+    margin: 16px;
+}
+
+#logo {
+    margin: 12.5px auto 6.25px auto;
+    min-height: 50px;
+    max-height: 75px;
+    display: block;
+}
+
+h1 {
+    font-family: 'RobotoSlab', sans-serif;
+    font-size: 225%;
+    line-height: 180%;
+}
+
+h2 {
+    font-family: 'RobotoItalic', sans-serif;
+    font-size: 131%;
+    line-height: 120%;
+}
+
+#card {
+    margin: 10px 0 10px 0;
+    min-height: 220px;
+    min-width: 220px;
+    background-color: #FDE6D3;
+}
+
+.button_block {
+    overflow: hidden;
+}
+
+button {
+    background-color: #6DA673;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: 'RobotoLight', sans-serif;
+    font-size: 100%;
+    text-align: center;
+    vertical-align: central;
+    border: 0;
+    float: right;
+    margin: 10px 0 10px 0;
+    padding: 20px;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #6D6E70;
+}
+
+footer {
+    color: #6D6E70;
+    font-size: 80%;
+}
+
+a {
+    color: #D68544;
+}
+
+#copyright {
+    text-align: center;
+}
+
+#type_attribution {
+    line-height: 110%;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 400px) {
+    button {
+        width: 100%;
+    }
+}
