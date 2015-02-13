@@ -19,6 +19,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.css" />
+    <Content Include="images\branch2.svg" />
+    <Content Include="images\branch_shadow.svg" />
+    <Content Include="images\leaf2.svg" />
     <Content Include="images\logo.png" />
     <Content Include="index.html" />
     <Content Include="js\edge.5.0.1.min.js" />
