@@ -68,9 +68,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="index.html" />
-    <Content Include="js\edge.5.0.1.min.js" />
-    <Content Include="LittleBlessing_edge.js" />
-    <Content Include="LittleBlessing_edgeActions.js" />
+    <Content Include="js\edge.5.0.1.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LittleBlessing_edge.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LittleBlessing_edgeActions.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="styles\fonts.css" />
     <Content Include="styles\mgreetings.css" />
     <Content Include="styles\standard.css" />
