@@ -19,10 +19,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.css" />
+    <Content Include="images\branch.svg" />
     <Content Include="images\branch2.svg" />
+    <Content Include="images\branch3.svg" />
     <Content Include="images\branch_shadow.svg" />
+    <Content Include="images\cloud_big_bottom.svg" />
+    <Content Include="images\cloud_big_bottom2.svg" />
+    <Content Include="images\cloud_big_top.svg" />
+    <Content Include="images\cloud_small_bottom.svg" />
+    <Content Include="images\cloud_small_top.svg" />
+    <Content Include="images\cloud_small_top2.svg" />
+    <Content Include="images\leaf.svg" />
     <Content Include="images\leaf2.svg" />
+    <Content Include="images\leaf3.svg" />
+    <Content Include="images\leaf4.svg" />
     <Content Include="images\logo.png" />
+    <Content Include="images\trees.svg" />
     <Content Include="index.html" />
     <Content Include="js\edge.5.0.1.min.js" />
     <Content Include="LittleBlessing_edge.js" />
