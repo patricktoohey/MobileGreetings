@@ -9,7 +9,9 @@
         js='js/',
         fonts = {
             'julee, fantasy': '<script src=\"http://use.edgefonts.net/julee:n4:all.js\"></script>',
-            'patrick-hand, sans-serif': '<script src=\"http://use.edgefonts.net/patrick-hand:n4:all.js\"></script>'        },
+            'patrick-hand, sans-serif': '<script src=\"http://use.edgefonts.net/patrick-hand:n4:all.js\"></script>',
+            '\'Tekton Pro Cond\'': '',
+            '\'Tekton Pro\'': ''        },
         opts = {
             'gAudioPreloadPreference': 'auto',
             'gVideoPreloadPreference': 'auto'
@@ -31,49 +33,49 @@
                         {
                             id: 'cloud_small_bottom',
                             type: 'image',
-                            rect: ['-1px', '140px', '319px', '170px', 'auto', 'auto'],
+                            rect: ['600px', '148px', '319px', '170px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0)",im+"cloud_small_bottom.svg",'0px','0px']
                         },
                         {
                             id: 'GreatJoy',
                             type: 'text',
-                            rect: ['105px', '151px', '191px', '34px', 'auto', 'auto'],
+                            rect: ['78px', '162px', '288px', '59px', 'auto', 'auto'],
                             text: "Great Joy!",
                             align: "right",
-                            font: ['patrick-hand, sans-serif', [32, "px"], "rgba(142,53,87,1.00)", "normal", "none", "normal", "break-word", ""],
-                            textStyle: ["7px", "", "", ""]
+                            font: ['Tekton Pro', [40, "px"], "rgba(158,49,93,1.00)", "normal", "none", "normal", "break-word", ""],
+                            textStyle: ["6.31px", "", "", ""]
                         },
                         {
                             id: 'LittleBlessing',
                             type: 'text',
-                            rect: ['3px', '94px', '315px', '70px', 'auto', 'auto'],
+                            rect: ['41px', '94px', '328px', '70px', 'auto', 'auto'],
                             text: "Little Blessing",
-                            align: "center",
-                            font: ['patrick-hand, sans-serif', [48, "px"], "rgba(142,53,87,1.00)", "normal", "none", "normal", "break-word", ""],
+                            align: "left",
+                            font: ['Tekton Pro Cond', [67, "px"], "rgba(142,53,87,1.00)", "normal", "none", "normal", "break-word", ""],
                             textStyle: ["0px", "", "", ""]
                         },
                         {
                             id: 'cloud_small_top2',
                             type: 'image',
-                            rect: ['3px', '128px', '319px', '170px', 'auto', 'auto'],
+                            rect: ['604px', '136px', '319px', '170px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0)",im+"cloud_small_top2.svg",'0px','0px']
                         },
                         {
                             id: 'AndYour',
                             type: 'text',
-                            rect: ['34px', '63px', '160px', '34px', 'auto', 'auto'],
+                            rect: ['41px', '58px', '229px', '34px', 'auto', 'auto'],
                             text: "And Your",
-                            align: "center",
-                            font: ['patrick-hand, sans-serif', [32, "px"], "rgba(142,53,87,1.00)", "normal", "none", "normal", "break-word", ""],
-                            textStyle: ["7px", "", "", ""]
+                            align: "left",
+                            font: ['Tekton Pro', [40, "px"], "rgba(142,53,87,1.00)", "normal", "none", "normal", "break-word", ""],
+                            textStyle: ["6.31px", "", "", ""]
                         },
                         {
                             id: 'WishingYou',
                             type: 'text',
-                            rect: ['33px', '28px', '221px', '41px', 'auto', 'auto'],
+                            rect: ['41px', '17px', '282px', '41px', 'auto', 'auto'],
                             text: "Wishing You",
-                            font: ['patrick-hand, sans-serif', [32, "px"], "rgba(142,53,87,1.00)", "normal", "none", "normal", "break-word", ""],
-                            textStyle: ["7px", "", "", ""]
+                            font: ['Tekton Pro', [40, "px"], "rgba(142,53,87,1.00)", "normal", "none", "normal", "break-word", ""],
+                            textStyle: ["6.31px", "", "", ""]
                         },
                         {
                             id: 'branch3',
@@ -82,18 +84,10 @@
                             fill: ["rgba(0,0,0,0)",im+"branch3.svg",'0px','0px']
                         },
                         {
-                            id: 'leaf4',
-                            type: 'image',
-                            rect: ['441px', '103px', '27px', '85px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"leaf4.svg",'0px','0px'],
-                            transform: [[],['7'],[],[],['0%','100%']]
-                        },
-                        {
-                            id: 'cloud_small_top2Copy',
-                            type: 'image',
-                            rect: ['-12px', '-50px', '319px', '170px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"cloud_small_top2.svg",'0px','0px'],
-                            transform: [[],['180']]
+                            id: 'leaf',
+                            symbolName: 'leaf',
+                            type: 'rect',
+                            rect: ['441', '103', '27', '85', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -106,78 +100,99 @@
                     }
                 },
                 timeline: {
-                    duration: 20000,
+                    duration: 90000,
                     autoPlay: true,
                     data: [
                         [
-                            "eid472",
+                            "eid509",
                             "left",
                             0,
-                            20000,
+                            90000,
                             "easeOutBack",
                             "${cloud_small_bottom}",
-                            '-1px',
-                            '-409px'
+                            '600px',
+                            '-390px'
                         ],
+                        [
+                            "eid505",
+                            "left",
+                            0,
+                            90000,
+                            "easeOutBack",
+                            "${cloud_small_top2}",
+                            '604px',
+                            '-386px'
+                        ],
+                        [
+                            "eid507",
+                            "top",
+                            0,
+                            90000,
+                            "easeOutBack",
+                            "${cloud_small_top2}",
+                            '136px',
+                            '148px'
+                        ],
+                        [
+                            "eid511",
+                            "top",
+                            0,
+                            90000,
+                            "easeOutBack",
+                            "${cloud_small_bottom}",
+                            '148px',
+                            '160px'
+                        ]
+                    ]
+                }
+            },
+            "leaf": {
+                version: "5.0.1",
+                minimumCompatibleVersion: "5.0.0",
+                build: "5.0.1.386",
+                scaleToFit: "none",
+                centerStage: "none",
+                resizeInstances: false,
+                content: {
+                    dom: [
+                        {
+                            rect: ['0px', '0px', '27px', '85px', 'auto', 'auto'],
+                            id: 'leaf4',
+                            transform: [[], [], [], [], ['0%', '100%']],
+                            type: 'image',
+                            fill: ['rgba(0,0,0,0)', 'images/leaf4.svg', '0px', '0px']
+                        }
+                    ],
+                    style: {
+                        '${symbolSelector}': {
+                            isStage: 'true',
+                            rect: [undefined, undefined, '27px', '85px']
+                        }
+                    }
+                },
+                timeline: {
+                    duration: 4000,
+                    autoPlay: true,
+                    data: [
                         [
                             "eid500",
                             "rotateZ",
                             0,
-                            4000,
-                            "easeOutBack",
+                            2000,
+                            "easeInOutQuad",
                             "${leaf4}",
                             '0deg',
                             '7deg'
                         ],
                         [
-                            "eid422",
-                            "left",
-                            0,
-                            20000,
-                            "easeOutBack",
-                            "${cloud_small_top2Copy}",
-                            '-12px',
-                            '-361px'
-                        ],
-                        [
-                            "eid424",
-                            "top",
-                            0,
-                            20000,
-                            "easeOutBack",
-                            "${cloud_small_top2Copy}",
-                            '-50px',
-                            '-41px'
-                        ],
-                        [
-                            "eid468",
-                            "left",
-                            0,
-                            20000,
-                            "easeOutBack",
-                            "${cloud_small_top2}",
-                            '3px',
-                            '-405px'
-                        ],
-                        [
-                            "eid470",
-                            "top",
-                            0,
-                            20000,
-                            "easeOutBack",
-                            "${cloud_small_top2}",
-                            '128px',
-                            '164px'
-                        ],
-                        [
-                            "eid474",
-                            "top",
-                            0,
-                            20000,
-                            "easeOutBack",
-                            "${cloud_small_bottom}",
-                            '140px',
-                            '176px'
+                            "eid503",
+                            "rotateZ",
+                            2000,
+                            2000,
+                            "easeInOutQuad",
+                            "${leaf4}",
+                            '7deg',
+                            '0deg'
                         ]
                     ]
                 }
