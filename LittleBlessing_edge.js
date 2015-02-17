@@ -31,63 +31,76 @@
                 content: {
                     dom: [
                         {
-                            id: 'cloud_small_bottom',
-                            type: 'image',
-                            rect: ['600px', '148px', '319px', '170px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"cloud_small_bottom.svg",'0px','0px']
-                        },
-                        {
                             id: 'GreatJoy',
+                            display: 'none',
                             type: 'text',
-                            rect: ['78px', '162px', '288px', '59px', 'auto', 'auto'],
+                            rect: ['78px', '180px', '288px', '59px', 'auto', 'auto'],
                             text: "Great Joy!",
                             align: "right",
-                            font: ['Tekton Pro', [40, "px"], "rgba(158,49,93,1.00)", "normal", "none", "normal", "break-word", ""],
+                            font: ['patrick-hand, sans-serif', [40, "px"], "rgba(158,49,93,1.00)", "normal", "none", "normal", "break-word", ""],
                             textStyle: ["6.31px", "", "", ""]
                         },
                         {
-                            id: 'LittleBlessing',
-                            type: 'text',
-                            rect: ['41px', '94px', '328px', '70px', 'auto', 'auto'],
-                            text: "Little Blessing",
-                            align: "left",
-                            font: ['Tekton Pro Cond', [67, "px"], "rgba(142,53,87,1.00)", "normal", "none", "normal", "break-word", ""],
-                            textStyle: ["0px", "", "", ""]
-                        },
-                        {
-                            id: 'cloud_small_top2',
+                            id: 'cloud_lower_bottom',
                             type: 'image',
-                            rect: ['604px', '136px', '319px', '170px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"cloud_small_top2.svg",'0px','0px']
+                            rect: ['-219px', '147px', '319px', '170px', 'auto', 'auto'],
+                            fill: ["rgba(0,0,0,0)",im+"cloud_small_bottom.svg",'0px','0px']
                         },
                         {
                             id: 'AndYour',
                             type: 'text',
-                            rect: ['41px', '58px', '229px', '34px', 'auto', 'auto'],
+                            rect: ['41px', '68px', '229px', '34px', 'auto', 'auto'],
                             text: "And Your",
                             align: "left",
-                            font: ['Tekton Pro', [40, "px"], "rgba(142,53,87,1.00)", "normal", "none", "normal", "break-word", ""],
+                            font: ['patrick-hand, sans-serif', [40, "px"], "rgba(142,53,87,1.00)", "normal", "none", "normal", "break-word", ""],
                             textStyle: ["6.31px", "", "", ""]
                         },
                         {
                             id: 'WishingYou',
                             type: 'text',
-                            rect: ['41px', '17px', '282px', '41px', 'auto', 'auto'],
+                            rect: ['41px', '24px', '282px', '41px', 'auto', 'auto'],
                             text: "Wishing You",
-                            font: ['Tekton Pro', [40, "px"], "rgba(142,53,87,1.00)", "normal", "none", "normal", "break-word", ""],
+                            font: ['patrick-hand, sans-serif', [40, "px"], "rgba(142,53,87,1.00)", "normal", "none", "normal", "break-word", ""],
                             textStyle: ["6.31px", "", "", ""]
+                        },
+                        {
+                            id: 'cloud_upper_bottom',
+                            type: 'image',
+                            rect: ['-34px', '-34px', '319px', '170px', 'auto', 'auto'],
+                            fill: ["rgba(0,0,0,0)",im+"cloud_small_bottom.svg",'0px','0px']
+                        },
+                        {
+                            id: 'cloud_upper_top',
+                            type: 'image',
+                            rect: ['-30px', '-46px', '319px', '170px', 'auto', 'auto'],
+                            fill: ["rgba(0,0,0,0)",im+"cloud_small_top2.svg",'0px','0px']
+                        },
+                        {
+                            id: 'LittleBlessing',
+                            type: 'text',
+                            rect: ['44px', '110px', '397px', '70px', 'auto', 'auto'],
+                            text: "Little Blessing",
+                            align: "left",
+                            font: ['patrick-hand, sans-serif', [60, "px"], "rgba(142,53,87,1.00)", "normal", "none", "normal", "break-word", ""],
+                            textStyle: ["0px", "", "", ""]
+                        },
+                        {
+                            id: 'cloud_lower_top',
+                            type: 'image',
+                            rect: ['-212px', '155px', '319px', '170px', 'auto', 'auto'],
+                            fill: ["rgba(0,0,0,0)",im+"cloud_small_top2.svg",'0px','0px']
                         },
                         {
                             id: 'branch3',
                             type: 'image',
-                            rect: ['-382px', '136px', '1175px', '342px', 'auto', 'auto'],
+                            rect: ['-102px', '222px', '702px', '204px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0)",im+"branch3.svg",'0px','0px']
                         },
                         {
-                            id: 'leaf',
+                            id: 'leaf2',
                             symbolName: 'leaf',
                             type: 'rect',
-                            rect: ['441', '103', '27', '85', 'auto', 'auto']
+                            rect: ['465px', '158px', '50', '97', 'auto', 'auto']
                         }
                     ],
                     style: {
@@ -100,48 +113,108 @@
                     }
                 },
                 timeline: {
-                    duration: 90000,
+                    duration: 34250,
                     autoPlay: true,
                     data: [
                         [
-                            "eid509",
-                            "left",
-                            0,
-                            90000,
-                            "easeOutBack",
-                            "${cloud_small_bottom}",
-                            '600px',
-                            '-390px'
-                        ],
-                        [
-                            "eid505",
-                            "left",
-                            0,
-                            90000,
-                            "easeOutBack",
-                            "${cloud_small_top2}",
-                            '604px',
-                            '-386px'
-                        ],
-                        [
-                            "eid507",
+                            "eid637",
                             "top",
                             0,
-                            90000,
+                            34250,
                             "easeOutBack",
-                            "${cloud_small_top2}",
-                            '136px',
-                            '148px'
+                            "${cloud_lower_bottom}",
+                            '147px',
+                            '136px'
                         ],
                         [
-                            "eid511",
+                            "eid636",
+                            "left",
+                            0,
+                            34250,
+                            "easeOutBack",
+                            "${cloud_lower_bottom}",
+                            '-219px',
+                            '613px'
+                        ],
+                        [
+                            "eid634",
+                            "left",
+                            0,
+                            34250,
+                            "easeOutBack",
+                            "${cloud_lower_top}",
+                            '-212px',
+                            '620px'
+                        ],
+                        [
+                            "eid645",
                             "top",
                             0,
-                            90000,
+                            29341,
                             "easeOutBack",
-                            "${cloud_small_bottom}",
-                            '148px',
-                            '160px'
+                            "${cloud_upper_bottom}",
+                            '-34px',
+                            '-42px'
+                        ],
+                        [
+                            "eid643",
+                            "left",
+                            0,
+                            29348,
+                            "easeOutBack",
+                            "${cloud_upper_bottom}",
+                            '-34px',
+                            '612px'
+                        ],
+                        [
+                            "eid641",
+                            "top",
+                            0,
+                            29348,
+                            "easeOutBack",
+                            "${cloud_upper_top}",
+                            '-46px',
+                            '-54px'
+                        ],
+                        [
+                            "eid635",
+                            "top",
+                            0,
+                            34250,
+                            "easeOutBack",
+                            "${cloud_lower_top}",
+                            '155px',
+                            '144px'
+                        ],
+                        [
+                            "eid575",
+                            "display",
+                            0,
+                            0,
+                            "easeOutQuad",
+                            "${GreatJoy}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid576",
+                            "display",
+                            2695,
+                            0,
+                            "easeOutQuad",
+                            "${GreatJoy}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid639",
+                            "left",
+                            0,
+                            29348,
+                            "easeOutBack",
+                            "${cloud_upper_top}",
+                            '-30px',
+                            '616px'
                         ]
                     ]
                 }
@@ -156,43 +229,43 @@
                 content: {
                     dom: [
                         {
-                            rect: ['0px', '0px', '27px', '85px', 'auto', 'auto'],
-                            id: 'leaf4',
-                            transform: [[], [], [], [], ['0%', '100%']],
+                            rect: ['0px', '0px', '50px', '97px', 'auto', 'auto'],
+                            id: 'leaf5',
+                            transform: [[], ['-10'], [], [], ['90%', '100%']],
                             type: 'image',
-                            fill: ['rgba(0,0,0,0)', 'images/leaf4.svg', '0px', '0px']
+                            fill: ['rgba(0,0,0,0)', 'images/leaf5.svg', '0px', '0px']
                         }
                     ],
                     style: {
                         '${symbolSelector}': {
                             isStage: 'true',
-                            rect: [undefined, undefined, '27px', '85px']
+                            rect: [undefined, undefined, '50px', '97px']
                         }
                     }
                 },
                 timeline: {
-                    duration: 4000,
+                    duration: 5000,
                     autoPlay: true,
                     data: [
                         [
-                            "eid500",
+                            "eid605",
                             "rotateZ",
                             0,
                             2000,
-                            "easeInOutQuad",
-                            "${leaf4}",
-                            '0deg',
-                            '7deg'
+                            "swing",
+                            "${leaf5}",
+                            '-24deg',
+                            '-10deg'
                         ],
                         [
-                            "eid503",
+                            "eid607",
                             "rotateZ",
                             2000,
-                            2000,
-                            "easeInOutQuad",
-                            "${leaf4}",
-                            '7deg',
-                            '0deg'
+                            3000,
+                            "swing",
+                            "${leaf5}",
+                            '-10deg',
+                            '-24deg'
                         ]
                     ]
                 }

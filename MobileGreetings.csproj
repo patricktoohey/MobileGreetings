@@ -61,6 +61,7 @@
     <Content Include="images\leaf4.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="images\leaf5.svg" />
     <Content Include="images\logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
