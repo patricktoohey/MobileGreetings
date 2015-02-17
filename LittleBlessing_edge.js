@@ -29,6 +29,12 @@
                 content: {
                     dom: [
                         {
+                            id: 'cloud_small_bottom',
+                            type: 'image',
+                            rect: ['-1px', '140px', '319px', '170px', 'auto', 'auto'],
+                            fill: ["rgba(0,0,0,0)",im+"cloud_small_bottom.svg",'0px','0px']
+                        },
+                        {
                             id: 'GreatJoy',
                             type: 'text',
                             rect: ['105px', '151px', '191px', '34px', 'auto', 'auto'],
@@ -36,18 +42,6 @@
                             align: "right",
                             font: ['patrick-hand, sans-serif', [32, "px"], "rgba(142,53,87,1.00)", "normal", "none", "normal", "break-word", ""],
                             textStyle: ["7px", "", "", ""]
-                        },
-                        {
-                            id: 'cloud_small_bottom',
-                            type: 'image',
-                            rect: ['621px', '129px', '319px', '170px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"cloud_small_bottom.svg",'0px','0px']
-                        },
-                        {
-                            id: 'cloud_big_bottom2',
-                            type: 'image',
-                            rect: ['-111px', '-155px', '505px', '268px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"cloud_big_bottom2.svg",'0px','0px']
                         },
                         {
                             id: 'LittleBlessing',
@@ -61,7 +55,7 @@
                         {
                             id: 'cloud_small_top2',
                             type: 'image',
-                            rect: ['627px', '137px', '319px', '170px', 'auto', 'auto'],
+                            rect: ['3px', '128px', '319px', '170px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0)",im+"cloud_small_top2.svg",'0px','0px']
                         },
                         {
@@ -82,12 +76,6 @@
                             textStyle: ["7px", "", "", ""]
                         },
                         {
-                            id: 'cloud_big_top2',
-                            type: 'image',
-                            rect: ['-106px', '-162px', '505px', '268px', 'auto', 'auto'],
-                            fill: ["rgba(0,0,0,0)",im+"cloud_big_top.svg",'0px','0px']
-                        },
-                        {
                             id: 'branch3',
                             type: 'image',
                             rect: ['-382px', '136px', '1175px', '342px', 'auto', 'auto'],
@@ -99,6 +87,13 @@
                             rect: ['441px', '103px', '27px', '85px', 'auto', 'auto'],
                             fill: ["rgba(0,0,0,0)",im+"leaf4.svg",'0px','0px'],
                             transform: [[],['7'],[],[],['0%','100%']]
+                        },
+                        {
+                            id: 'cloud_small_top2Copy',
+                            type: 'image',
+                            rect: ['-12px', '-50px', '319px', '170px', 'auto', 'auto'],
+                            fill: ["rgba(0,0,0,0)",im+"cloud_small_top2.svg",'0px','0px'],
+                            transform: [[],['180']]
                         }
                     ],
                     style: {
@@ -111,268 +106,78 @@
                     }
                 },
                 timeline: {
-                    duration: 11000,
+                    duration: 20000,
                     autoPlay: true,
                     data: [
                         [
-                            "eid323",
-                            "top",
-                            0,
-                            5000,
-                            "linear",
-                            "${cloud_big_bottom2}",
-                            '-155px',
-                            '-200px'
-                        ],
-                        [
-                            "eid317",
+                            "eid472",
                             "left",
                             0,
-                            5000,
-                            "linear",
+                            20000,
+                            "easeOutBack",
                             "${cloud_small_bottom}",
-                            '-18px',
-                            '621px'
+                            '-1px',
+                            '-409px'
                         ],
                         [
-                            "eid361",
-                            "left",
-                            5000,
-                            6000,
-                            "linear",
-                            "${cloud_small_bottom}",
-                            '621px',
-                            '-333px'
-                        ],
-                        [
-                            "eid359",
+                            "eid500",
                             "rotateZ",
                             0,
-                            2000,
-                            "linear",
+                            4000,
+                            "easeOutBack",
                             "${leaf4}",
-                            '7deg',
-                            '0deg'
-                        ],
-                        [
-                            "eid232",
-                            "top",
-                            0,
-                            0,
-                            "linear",
-                            "${WishingYou}",
-                            '28px',
-                            '28px'
-                        ],
-                        [
-                            "eid325",
-                            "left",
-                            0,
-                            5000,
-                            "linear",
-                            "${cloud_big_top2}",
-                            '-106px',
-                            '-488px'
-                        ],
-                        [
-                            "eid256",
-                            "top",
-                            0,
-                            0,
-                            "linear",
-                            "${LittleBlessing}",
-                            '94px',
-                            '94px'
-                        ],
-                        [
-                            "eid194",
-                            "width",
-                            0,
-                            0,
-                            "linear",
-                            "${GreatJoy}",
-                            '191px',
-                            '191px'
-                        ],
-                        [
-                            "eid202",
-                            "left",
-                            0,
-                            0,
-                            "linear",
-                            "${GreatJoy}",
-                            '105px',
-                            '105px'
-                        ],
-                        [
-                            "eid360",
-                            "rotateZ",
-                            0,
-                            0,
-                            "linear",
-                            "${branch3}",
                             '0deg',
-                            '0deg'
+                            '7deg'
                         ],
                         [
-                            "eid327",
-                            "top",
-                            0,
-                            5000,
-                            "linear",
-                            "${cloud_big_top2}",
-                            '-162px',
-                            '-207px'
-                        ],
-                        [
-                            "eid319",
-                            "top",
-                            0,
-                            5000,
-                            "linear",
-                            "${cloud_small_bottom}",
-                            '129px',
-                            '129px'
-                        ],
-                        [
-                            "eid362",
-                            "top",
-                            5000,
-                            6000,
-                            "linear",
-                            "${cloud_small_bottom}",
-                            '129px',
-                            '136px'
-                        ],
-                        [
-                            "eid321",
+                            "eid422",
                             "left",
                             0,
-                            5000,
-                            "linear",
-                            "${cloud_big_bottom2}",
-                            '-111px',
-                            '-493px'
-                        ],
-                        [
-                            "eid219",
-                            "left",
-                            0,
-                            0,
-                            "linear",
-                            "${branch3}",
-                            '-382px',
-                            '-382px'
-                        ],
-                        [
-                            "eid329",
-                            "left",
-                            0,
-                            5000,
-                            "linear",
-                            "${cloud_small_top2}",
+                            20000,
+                            "easeOutBack",
+                            "${cloud_small_top2Copy}",
                             '-12px',
-                            '627px'
+                            '-361px'
                         ],
                         [
-                            "eid363",
-                            "left",
-                            5000,
-                            6000,
-                            "linear",
-                            "${cloud_small_top2}",
-                            '627px',
-                            '-327px'
-                        ],
-                        [
-                            "eid257",
+                            "eid424",
                             "top",
                             0,
-                            0,
-                            "linear",
-                            "${GreatJoy}",
-                            '151px',
-                            '151px'
+                            20000,
+                            "easeOutBack",
+                            "${cloud_small_top2Copy}",
+                            '-50px',
+                            '-41px'
                         ],
                         [
-                            "eid188",
+                            "eid468",
                             "left",
                             0,
-                            0,
-                            "linear",
-                            "${WishingYou}",
-                            '33px',
-                            '33px'
-                        ],
-                        [
-                            "eid203",
-                            "background-color",
-                            0,
-                            0,
-                            "linear",
-                            "${Stage}",
-                            'rgba(225,235,244,1.00)',
-                            'rgba(225,235,244,1.00)'
-                        ],
-                        [
-                            "eid191",
-                            "width",
-                            0,
-                            0,
-                            "linear",
-                            "${AndYour}",
-                            '160px',
-                            '160px'
-                        ],
-                        [
-                            "eid331",
-                            "top",
-                            0,
-                            5000,
-                            "linear",
+                            20000,
+                            "easeOutBack",
                             "${cloud_small_top2}",
-                            '137px',
-                            '137px'
+                            '3px',
+                            '-405px'
                         ],
                         [
-                            "eid364",
+                            "eid470",
                             "top",
-                            5000,
-                            6000,
-                            "linear",
+                            0,
+                            20000,
+                            "easeOutBack",
                             "${cloud_small_top2}",
-                            '137px',
-                            '144px'
+                            '128px',
+                            '164px'
                         ],
                         [
-                            "eid193",
-                            "left",
-                            0,
-                            0,
-                            "linear",
-                            "${AndYour}",
-                            '34px',
-                            '34px'
-                        ],
-                        [
-                            "eid246",
+                            "eid474",
                             "top",
                             0,
-                            0,
-                            "linear",
-                            "${AndYour}",
-                            '63px',
-                            '63px'
-                        ],
-                        [
-                            "eid220",
-                            "top",
-                            0,
-                            0,
-                            "linear",
-                            "${branch3}",
-                            '136px',
-                            '136px'
+                            20000,
+                            "easeOutBack",
+                            "${cloud_small_bottom}",
+                            '140px',
+                            '176px'
                         ]
                     ]
                 }
