@@ -82,3 +82,7 @@ a {
         width: 100%;
     }
 }
+
+.greeting {
+    text-shadow: 2px 2px 0px rgba(237,209,219,255);
+}
