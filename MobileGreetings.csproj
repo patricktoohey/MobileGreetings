@@ -88,9 +88,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app.ts" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="fonts\RobotoSlab-Bold.ttf" />
     <Content Include="fonts\Roboto-MediumItalic.ttf" />
     <Content Include="fonts\Roboto-Light.ttf" />
