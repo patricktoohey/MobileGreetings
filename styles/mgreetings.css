@@ -85,11 +85,17 @@ a {
 
 .greeting {
     text-shadow: 2px 2px 0px rgba(237,209,219,255);
-    font-family: "tekton-pro-condensed",sans-serif;
+    font-family: "tekton-pro-condensed", sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .card_type {
     font-family: "tekton-pro";
+    font-style: normal;
+    font-weight: 700;
+}
+
+.border {
+    margin: auto;
 }
