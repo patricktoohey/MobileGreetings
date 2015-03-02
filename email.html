@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mobile Greetings</title>
+    <meta name="author" content="Patrick Toohey">
+    <meta name="designer" content="Patrick Toohey">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
+
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: normal;
+        }
+
+        /* Email CSS */
+
+        body {
+            font-family: 'RobotoLight', 'Arial', sans-serif;
+            font-weight: 300;
+            font-size: 100%;
+            text-align: left;
+        }
+
+        th {
+            font-weight: normal;
+        }
+
+        h1 {
+            font-family: 'Roboto Slab', 'Times New Roman', serif;
+            font-weight: 700;
+            font-size: 2.281em;
+            margin-bottom: 36px;
+            margin-top: 36px;
+            text-align: left;
+        }
+
+        h2 {
+            font-family: 'RobotoLight', 'Arial', sans-serif;
+            font-weight: 500;
+            font-size: 1.424em;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .address,
+        #copyright,
+        #type_attribution {
+            font-family: 'RobotoLight', 'Arial', sans-serif;
+            font-weight: 500;
+            font-size: 0.702em;
+            text-align: left;
+        }
+
+        #copyright {
+            margin: 50px 0 10px 0;
+            text-align: center;
+        }
+
+        /* Button colors and radius defined in brand guide */
+        .button {
+            /* Fill, Stroke, and Corner */
+            background-color: #6DA673;
+            border: 0;
+            border-radius: 10px;
+            text-align: center;
+            /* Layout */
+            padding: 15px 20px;
+            margin: 50px auto 50px auto;
+            display: block;
+            min-width: 235px;
+            max-width: 235px;
+        }
+
+        /* Special styling for 'thank you' link */
+        #view_greeting,
+        #view_greeting:link,
+        #view_greeting:hover,
+        #view_greeting:active,
+        #view_greeting:visited {
+            /* Content style */
+            font-family: 'RobotoLight', 'Arial', sans-serif;
+            font-size: 100%;
+            text-align: center;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        #container {
+            max-width: 800px;
+            width: 90%;
+            margin: auto;
+        }
+
+        #logo {
+            margin: 20px auto;
+            min-height: 50px;
+            max-height: 75px;
+            max-width: 270px;
+            display: block;
+        }
+
+        p {
+            line-height: 1em;
+        }
+
+        #statement {
+            line-height: 100%;
+            margin: 20px 26px;
+            font-size: 0.889em;
+        }
+
+        #statement_row {
+            vertical-align: top !important;
+        }
+
+        /* standard link style */
+        a {
+            color: #D68544;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='container'>
+        <table>
+            <tr>
+                <th>
+                    <h1>Hi Tracy,</h1>
+                    <h2>Marie sent you and e-card through Mobile Greeings.</h2>
+                    <p>The button below will open your card.</p>
+                </th>
+            </tr>
+            <tr>
+                <td style="margin: auto">
+                    <div class="button">
+                        <a id="view_greeting" href="http://bahbah2e.azurewebsites.net">view your greeting</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <hr />
+                    <table>
+                        <tr>
+                            <td width="223px">
+                                <img id="logo" src="http://bahbah2e.azurewebsites.net/images/logo.png" alt="Mobile Greetings"/>
+                                <p class="address">
+                                    1600 Pennsylvania Ave.
+                                    <br />Persnickity, AL 12393
+                                    <br />(607) 351-7172
+                                </p>
+                            </td>
+                            <td colspan="2" id="statement_row">
+                                <p id="statement">
+                                    Mobile Greetings is the e-greeting company for people on the go. Browse our extensive array of greetings for all occasions on your mobile device.
+                                </p>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!--Copyright Module-->
+                    <p id="copyright">&copy;2015 Mobile Greetings</p>
+                    <p id="type_attribution">
+                        Type set in
+                        <a href="http://www.google.com/fonts/specimen/Roboto">Roboto</a> and
+                        <a href="http://www.google.com/fonts/specimen/Roboto+Slab">Roboto Slab</a> by Christian Robertson used under the
+                        <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License, version 2.00</a>.
+                    </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

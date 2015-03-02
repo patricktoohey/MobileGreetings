@@ -19,6 +19,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.css" />
+    <Content Include="email.html" />
     <Content Include="images\branch3.svg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
