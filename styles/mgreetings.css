@@ -1,6 +1,12 @@
 ﻿/* Mobile Greetings e-greeing style template */
 /* Styling for e-card viewing page */
 
+body {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 100%;
+}
+
 /* Type follows 8:9 modular scale */
 /* h1     = 2.281 em */
 /* h2     = 1.424 em */
@@ -21,15 +27,9 @@ h2 {
     line-height: 120%;
 }
 
-body {
-    font-family: 'Roboto', 'Arial', sans-serif;
-    font-weight: 300;
-    font-size: 100%;
-}
-
 footer {
     color: #6D6E70;
-    font-size: 79%;
+    font-size: 0.79em;
 }
 
 #container {
@@ -68,6 +68,7 @@ footer {
     background-color: #6DA673;
     border: 0;
     border-radius: 10px;
+    text-align: center;
     
     /* Layout */
     padding: 15px 20px;
@@ -122,13 +123,7 @@ a {
         font-size: 1.266em;
     }
 
-    button {
+    .button {
         width: 100%;
-    }
-
-    #container {
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
     }
 }
