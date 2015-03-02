@@ -1,12 +1,18 @@
-﻿/*type follows 8:9 modular scale*/
+﻿
+/* Type follows 8:9 modular scale */
+/* h1     = 2.281 em */
+/* h2     = 1.424 em */
+/* body   = 1.000 em */
+/* footer = 0.790 em */
+
 h1 {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'Roboto Slab', 'Times New Roman', serif;
     font-weight: 700;
     font-size: 2.281em;
 }
 
 h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
     font-style: italic;
     font-weight: 500;
     font-size: 1.424em;
@@ -14,7 +20,7 @@ h2 {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 100%;
 }
@@ -22,51 +28,55 @@ body {
 footer {
     color: #6D6E70;
     font-size: 79%;
-    margin: 50px 0 20px 0;
 }
 
 #container {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
+    max-width: 800px;
 }
 
+/* Logo sizing as defined in brand guide */
 #logo {
     margin: 20px auto;
     min-height: 50px;
     max-height: 75px;
-    min-width: 270px;
+    max-width: 270px;
     display: block;
 }
 
 #card {
-    margin: 18.75px auto;
-    width: 100%;
-}
-
-#stage {
-    margin: 10px 0 10px 0;
-}
-
-#center-wrapper {
+    margin: 18.75px 0;
     width: 90%;
-    margin: 0 auto;
-    position: inherit;
 }
 
+.button_block {
+    overflow: hidden;
+}
+
+/* Button colors and radius defined in brand guide */
 button {
+
+    /* Fill, Stroke, and Corner */
     background-color: #6DA673;
-    border-radius: 10px;
     color: #ffffff;
-    font-family: 'RobotoLight', sans-serif;
+    border: 0;
+    border-radius: 10px;
+    
+    /* Content style */
+    font-family: 'RobotoLight', 'Arial', sans-serif;
     font-size: 100%;
     text-align: center;
     
-    border: 0;
+    /* Layout */
     margin: 0 auto 18.75px auto;
     padding: 15px 20px;
+    float: right;
+    display: block;
 }
 
+/* Use brand guide colors for a and hr elements */
 hr {
     margin-top: 10px;
     color: #6D6E70;
@@ -78,39 +88,30 @@ a {
 
 #copyright {
     text-align: center;
+    margin: 50px 0 20px 0;
 }
 
 #type_attribution {
     line-height: 110%;
-    margin-top: 10px;
 }
 
-@media screen and (max-width: 400px) {
+/* Adjust mobile type settings based on common standard */
+@media screen and (max-width: 600px) {
     h1 {
-    font-size: 1.602em;
-}
+        font-size: 1.602em;
+    }
 
-h2 {
-    font-size: 1.266em;
-}
+    h2 {
+        font-size: 1.266em;
+    }
+
     button {
         width: 100%;
     }
-}
 
-.greeting {
-    text-shadow: 2px 2px 0px rgba(237,209,219,255);
-    font-family: "tekton-pro-condensed", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-}
-
-.card_type {
-    font-family: "tekton-pro";
-    font-style: normal;
-    font-weight: 700;
-}
-
-.border {
-    margin: auto;
+    #container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
 }

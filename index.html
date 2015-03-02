@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Mobile Greetings</title>
-    <link rel="stylesheet" href="styles/standard.css" type="text/css" />
+    <link rel="stylesheet" href="styles/reset.css" type="text/css" />
     <script type="text/javascript" src="//use.typekit.net/cqi2bdk.js"></script>
     <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
     <meta name="author" content="Patrick Toohey">
@@ -27,31 +27,39 @@
             scaleToFit: "width",
             centerStage: "horizontal",
             minW: "0",
-            maxW: "undefined",
+            maxW: "800px",
             width: "600px",
-            height: "400px",
+            height: "400px"
         }, { dom: [] }, { dom: [] });
     </script>
     <!--Adobe Edge Runtime End-->
     <link rel="stylesheet" href="styles/mgreetings.css" type="text/css" />
+    <link rel="stylesheet" href="styles/littleblessing.css" type="text/css" />
 
 </head>
 <body>
     <div id="container">
         <article>
-            <img id="logo" src="images/logo.png" />
+            <img id="logo" src="images/logo.png" alt="Mobile Greetings" />
             <h1>Tracy,</h1>
             <h2>Enjoy your Mobile Greeting...</h2>
+
+            <!--Adobe Edge Animate Card-->
             <div id="card">
-                <div id="Stage" class="EDGE-696761484">
+                <div id="Stage" class="EDGE-696761484" style="width: 90% !important">
                 </div>
             </div>
+            <p>
+                
+            </p>
             <div class="button_block">
                 <button>say thank you</button>
             </div>
-            <hr />
+
             <div>
                 <footer>
+                    <hr />
+                    <!--Copyright Module-->
                     <p id="copyright">&copy;2015 Mobile Greetings</p>
                     <p id="type_attribution">
                         Type set in
@@ -59,8 +67,6 @@
                         <a href="http://www.google.com/fonts/specimen/Roboto+Slab">Roboto Slab</a> by Christian Robertson used under the
                         <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License, version 2.00</a>.
                     </p>
-                    <br />
-                    <!--<div id="content"></div>-->
                 </footer>
             </div>
         </article>
