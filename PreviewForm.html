@@ -1,6 +1,7 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <title>Mobile Greetings</title>
@@ -9,7 +10,11 @@
 
     <!-- Load type resoures required by e-card: Tekton Pro -->
     <script type="text/javascript" src="//use.typekit.net/cqi2bdk.js"></script>
-    <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
+    <script type="text/javascript">
+        try {
+            Typekit.load();
+        } catch (e) {}
+    </script>
 
     <link rel="stylesheet" href="styles/reset.css" type="text/css" />
 
@@ -31,11 +36,13 @@
         AdobeEdge.loadComposition('LittleBlessing', 'EDGE-696761484', {
             scaleToFit: "none",
             centerStage: "none",
-            minW: "0",
-            maxW: "540px",
-            width: "600px",
-            height: "400px"
-        }, { dom: [] }, { dom: [] });
+
+            width: "50%"
+        }, {
+            dom: []
+        }, {
+            dom: []
+        });
     </script>
     <!--Adobe Edge Runtime End-->
     <!-- Load styles required by Mobile Greetings brand -->
@@ -43,51 +50,58 @@
     <link rel="stylesheet" href="styles/mgreetings_forms.css" type="text/css" />
 
 </head>
+
 <body>
     <div id="container">
         <article>
             <img id="logo" src="images/logo.png" alt="Mobile Greetings" />
-            <div id="navbar"></div>
-
-            <!--Personalization Form-->
-            <form action="/send-card" method="post">
-                <div class="form_label_value_pair">
-                    <label for="sender_name">Sender Name</label>
-                    <input type="text" id="sender_name" />
-                </div>
-
-                <div class="form_label_value_pair">
-                    <label for="sender_name">Sender Email</label>
-                    <input type="email" id="sender_email" />
-                </div>
-
-                <div class="form_label_value_pair">
-                    <label for="recipient_name">Recipient Name</label>
-                    <input type="text" id="recipient_name" />
-                </div>
-
-                <div class="form_label_value_pair">
-                    <label for="recipient_email">Recipient Email</label>
-                    <input type="email" id="recipient_email" />
-                </div>
-
-                <div class="form_label_value_pair">
-                    <label for="personalized_greeting">Personalized Greeting</label>
-                    <input type="text" id="personalized_entry_box" />
-                </div>
-                <div class="button">
-                    <button type="submit" class="buttontext">preview</button>
-                </div>
-                <div class="button">
-                    <button type="submit" class="buttontext">send card</button>
-                </div>
-            </form>
 
             <!--Adobe Edge Animate Card-->
             <div id="card">
                 <div id="Stage" class="EDGE-696761484">
                 </div>
             </div>
+
+            <!--Personalization Form-->
+            <form action="/send-card" method="post">
+                <div class="form_label_value_pair">
+                    <label for="sender_name">Sender Name</label>
+                    <input required type="text" id="sender_name" />
+                </div>
+
+                <div class="form_label_value_pair">
+                    <label for="sender_name">Sender Email</label>
+                    <input required type="email" id="sender_email" />
+                </div>
+
+                <div class="form_label_value_pair">
+                    <label for="recipient_name">Recipient Name</label>
+                    <input required type="text" id="recipient_name" />
+                </div>
+
+                <div class="form_label_value_pair">
+                    <label for="recipient_email">Recipient Email</label>
+                    <input required type="email" id="recipient_email" />
+                </div>
+
+                <div class="form_label_value_pair">
+                    <label for="personalized_greeting">Personalized Greeting</label>
+                    <input required type="text" id="personalized_entry_box" />
+                </div>
+
+                <div class="form_label_value_pair">
+                    <label for="send_date">Recipient Email</label>
+                    <input required type="date" id="send_date"> </input>
+                </div>
+
+                <div>
+                    <button type="submit">preview</button>
+
+                    <button type="submit">send card</button>
+                </div>
+            </form>
+
+
 
             <div class="button_block">
                 <div class="button">

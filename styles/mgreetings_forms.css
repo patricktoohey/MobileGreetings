@@ -1,4 +1,4 @@
-﻿/* Mobile Greetings forms template       */
+/* Mobile Greetings forms template       */
 /* Styling for preview and customization */
 
 label {
@@ -6,6 +6,7 @@ label {
     font-size: 1.424em;
 }
 
+select,
 input {
     width: 288px;
     height: 34px;
@@ -14,15 +15,38 @@ input {
     font-size: 100%;
 }
 
+input:valid {
+    outline: 2px solid #6DA673;
+}
+
+input:invalid {
+    outline: 2px solid #A55360;
+}
+
 #personalized_entry_box {
     height: 130px;
 }
+
 .form_label_value_pair {
     display: block;
     margin-bottom: 20px;
 }
 
 #card {
+    width: 50%;
+    float: left;
+}
+
+button {
+    background-color: #6DA673;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: 'RobotoLight', 'Arial', sans-serif;
+    font-size: 1.424em;
+    text-align: center;
+    vertical-align: central;
+    border: 0;
     float: right;
-    width: 540px !important;
+    margin: 10px 0;
+    padding: 20px;
 }
