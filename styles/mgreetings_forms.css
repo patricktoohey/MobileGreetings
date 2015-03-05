@@ -37,6 +37,11 @@ input:invalid {
     float: left;
 }
 
+form {
+    float: left;
+    width: 50%;
+}
+
 button {
     background-color: #6DA673;
     border-radius: 10px;
