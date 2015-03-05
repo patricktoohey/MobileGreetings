@@ -4,13 +4,18 @@
 <head>
     <meta charset="utf-8" />
     <title>Mobile Greetings</title>
-    <link rel="stylesheet" href="styles/reset.css" type="text/css" />
-    <script type="text/javascript" src="//use.typekit.net/cqi2bdk.js"></script>
-    <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
     <meta name="author" content="Patrick Toohey">
     <meta name="designer" content="Patrick Toohey">
 
+    <!-- Load type resoures required by e-card: Tekton Pro -->
+    <script type="text/javascript" src="//use.typekit.net/cqi2bdk.js"></script>
+    <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
+
+    <link rel="stylesheet" href="styles/reset.css" type="text/css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Load type resoures required by Mobile Greetings brand -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:300,500italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
 
@@ -24,39 +29,72 @@
     </style>
     <script>
         AdobeEdge.loadComposition('LittleBlessing', 'EDGE-696761484', {
-            scaleToFit: "both",
-            centerStage: "horizontal",
+            scaleToFit: "none",
+            centerStage: "none",
             minW: "0",
-            maxW: "800px",
+            maxW: "540px",
             width: "600px",
             height: "400px"
         }, { dom: [] }, { dom: [] });
     </script>
     <!--Adobe Edge Runtime End-->
+    <!-- Load styles required by Mobile Greetings brand -->
     <link rel="stylesheet" href="styles/mgreetings.css" type="text/css" />
-    <link rel="stylesheet" href="styles/littleblessing.css" type="text/css" />
+    <link rel="stylesheet" href="styles/mgreetings_forms.css" type="text/css" />
 
 </head>
 <body>
     <div id="container">
         <article>
             <img id="logo" src="images/logo.png" alt="Mobile Greetings" />
-            <h1>Tracy,</h1>
-            <h2>Enjoy your Mobile Greeting...</h2>
+            <div id="navbar"></div>
+
+            <!--Personalization Form-->
+            <form action="/send-card" method="post">
+                <div class="form_label_value_pair">
+                    <label for="sender_name">Sender Name</label>
+                    <input type="text" id="sender_name" />
+                </div>
+
+                <div class="form_label_value_pair">
+                    <label for="sender_name">Sender Email</label>
+                    <input type="email" id="sender_email" />
+                </div>
+
+                <div class="form_label_value_pair">
+                    <label for="recipient_name">Recipient Name</label>
+                    <input type="text" id="recipient_name" />
+                </div>
+
+                <div class="form_label_value_pair">
+                    <label for="recipient_email">Recipient Email</label>
+                    <input type="email" id="recipient_email" />
+                </div>
+
+                <div class="form_label_value_pair">
+                    <label for="personalized_greeting">Personalized Greeting</label>
+                    <input type="text" id="personalized_entry_box" />
+                </div>
+                <div class="button">
+                    <button type="submit" class="buttontext">preview</button>
+                </div>
+                <div class="button">
+                    <button type="submit" class="buttontext">send card</button>
+                </div>
+            </form>
 
             <!--Adobe Edge Animate Card-->
             <div id="card">
                 <div id="Stage" class="EDGE-696761484">
                 </div>
             </div>
-            
-            <!--Personalized message-->
-            <p id="personalized_greeting">
-                Congratulations on your special delivery. Our best wishes are with you for a very happy healthy baby.
-            </p>
+
             <div class="button_block">
                 <div class="button">
-                    <a class="buttontext" href="http://oswego.edu">say thank you</a>
+
+                </div>
+                <div class="button">
+                    <a id="thankyou" href="http://oswego.edu">say thank you</a>
                 </div>
             </div>
 

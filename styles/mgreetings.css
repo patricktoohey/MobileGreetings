@@ -39,6 +39,12 @@ footer {
     max-width: 800px;
 }
 
+#navbar {
+    width: 100%;
+    background-color: #A7A9AB;
+    height: 30px;    
+}
+
 /* Logo sizing as defined in brand guide */
 #logo {
     margin: 20px auto;
@@ -90,11 +96,11 @@ a {
 }
 
 /* Special styling for 'thank you' link */
-#thankyou,
-#thankyou:link,
-#thankyou:hover,
-#thankyou:active,
-#thankyou:visited {
+.buttontext,
+.buttontext:link,
+.buttontext:hover,
+.buttontext:active,
+.buttontext:visited {
     
     /* Content style */
     font-family: 'RobotoLight', 'Arial', sans-serif;

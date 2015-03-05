@@ -1,0 +1,28 @@
+﻿/* Mobile Greetings forms template       */
+/* Styling for preview and customization */
+
+label {
+    display: block;
+    font-size: 1.424em;
+}
+
+input {
+    width: 288px;
+    height: 34px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 100%;
+}
+
+#personalized_entry_box {
+    height: 130px;
+}
+.form_label_value_pair {
+    display: block;
+    margin-bottom: 20px;
+}
+
+#card {
+    float: right;
+    width: 540px !important;
+}

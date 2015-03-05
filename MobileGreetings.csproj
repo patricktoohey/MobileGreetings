@@ -42,8 +42,10 @@
     <Content Include="LittleBlessing_edgeActions.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="PreviewForm.html" />
     <Content Include="styles\littleblessing.css" />
     <Content Include="styles\mgreetings.css" />
+    <Content Include="styles\mgreetings_forms.css" />
     <Content Include="styles\reset.css" />
     <Content Include="web.config">
       <SubType>Designer</SubType>
