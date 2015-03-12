@@ -1,6 +1,24 @@
-﻿/* Mobile Greetings e-greeing style template */
+/* Mobile Greetings e-greeing style template */
 /* Styling for e-card viewing page */
 
+/* Overall container settings */
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Logo sizing as defined in brand guide */
+#logo {
+    margin: 0.7em auto 0.6em auto;
+    min-height: 50px;
+    max-height: 75px;
+    max-width: 150px;
+    display: block;
+}
+
+/* Establish base size for body type */
 body {
     font-family: 'Roboto', 'Arial', sans-serif;
     font-weight: 300;
@@ -17,6 +35,8 @@ h1 {
     font-family: 'Roboto Slab', 'Times New Roman', serif;
     font-weight: 700;
     font-size: 2.281em;
+    line-height: 120%;
+    margin-bottom: 0.4em;
 }
 
 h2 {
@@ -25,42 +45,21 @@ h2 {
     font-weight: 500;
     font-size: 1.424em;
     line-height: 120%;
-}
-
-footer {
-    color: #6D6E70;
-    font-size: 0.79em;
-}
-
-#container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    max-width: 800px;
-}
-
-#navbar {
-    width: 100%;
-    background-color: #A7A9AB;
-    height: 30px;    
-}
-
-/* Logo sizing as defined in brand guide */
-#logo {
-    margin: 20px auto;
-    min-height: 50px;
-    max-height: 75px;
-    max-width: 270px;
-    display: block;
+    margin-bottom: 0.7em;
 }
 
 #card {
-    margin: 18.75px 0;
+    margin-bottom: 0.7em;    
+}
+
+#Stage {
     width: 90%;
+    max-width: 90%;
+    margin-left: 0 !important;
 }
 
 #personalized_greeting {
-    margin-bottom: 20px;    
+    margin-bottom: 1em;    
 }
 
 .button_block {
@@ -77,22 +76,10 @@ footer {
     text-align: center;
     
     /* Layout */
-    padding: 15px 20px;
-    margin: 0 auto 18.75px auto;
+    padding: 0.6em 0.9em;
+    margin: 0 auto 1.1em auto;
     float: right;
     display: block;
-}
-
-/* Use brand guide colors for a and hr elements */
-hr {
-    margin-top: 10px;
-    color: #6D6E70;
-}
-
-/* standard link style */
-a {
-    color: #D68544;
-    text-decoration: none;
 }
 
 /* Special styling for 'thank you' link */
@@ -110,17 +97,25 @@ a {
     text-decoration: none;
 }
 
-#copyright {
-    text-align: center;
-    margin: 50px 0 20px 0;
+/* Use brand guide colors for a and hr elements */
+hr {
+    color: #6D6E70;
+    margin-bottom: 1em;
 }
 
-#type_attribution {
-    line-height: 110%;
+footer {
+    color: #6D6E70;
+    font-size: 0.79em;
+}
+
+/* standard link style */
+a {
+    color: #D68544;
+    text-decoration: none;
 }
 
 /* Adjust mobile type settings based on common standard */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 330px) {
     h1 {
         font-size: 1.602em;
     }

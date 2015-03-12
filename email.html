@@ -11,18 +11,26 @@
 
     <style>
         /* Reset CSS */
-         * {
+        * {
              margin: 0;
              padding: 0;
-             box-sizing: border-box;
+             line-height: 100%;
+             margin-top: 1em;
+             margin-bottom: 1em;
+             box-sizing: border-box;             
          }
+
+        img, 
+        embed, 
+        object, 
+        video { 
+            max-width: 100%; 
+        }
+
 
         h1, h2, h3, h4, h5, h6 {
             font-weight: normal;
         }
-
-        
-        
         
         /* Email CSS */
 
@@ -30,7 +38,7 @@
             font-family: 'RobotoLight', 'Arial', sans-serif;
             font-weight: 300;
             font-size: 100%;
-            text-align: left;
+            text-align: left;            
         }
 
         th {
@@ -41,8 +49,6 @@
             font-family: 'Roboto Slab', 'Times New Roman', serif;
             font-weight: 700;
             font-size: 2.281em;
-            margin-bottom: 36px;
-            margin-top: 36px;
             text-align: left;
         }
 
@@ -50,7 +56,6 @@
             font-family: 'RobotoLight', 'Arial', sans-serif;
             font-weight: 500;
             font-size: 1.424em;
-            margin-bottom: 20px;
             text-align: left;
         }
 
@@ -59,13 +64,12 @@
         #type_attribution {
             font-family: 'RobotoLight', 'Arial', sans-serif;
             font-weight: 500;
-            font-size: 0.702em;
+            font-size: 0.702em;            
             text-align: left;
             color: #6D6E70;
         }
 
         #copyright {
-            margin: 50px 0 10px 0;
             text-align: center;
         }
 
@@ -77,11 +81,10 @@
             border-radius: 10px;
             text-align: center;
             /* Layout */
-            padding: 15px 20px;
-            margin: 50px auto 50px auto;
+            padding: 1em 1em;
+            margin: 1em auto 1em auto;
             display: block;
-            min-width: 235px;
-            max-width: 235px;
+            max-width: 12em;
         }
 
         /* Special styling for 'thank you' link */
@@ -105,26 +108,19 @@
         }
 
         #logo {
-            margin: 20px auto;
-            min-height: 50px;
-            max-height: 75px;
-            max-width: 150px;
+            margin: 1em 1em 1em 0;
             display: block;
-        }
-
-        p {
-            line-height: 1em;
         }
 
         #statement {
             line-height: 100%;
-            margin: 20px 26px;
+            margin: 1em 0 1em 5%;
             font-size: 0.889em;
         }
 
         #address_row,
         #statement_row {
-            vertical-align: top !important;
+            vertical-align: top !important;            
         }
 
         /* standard link style */
@@ -157,12 +153,12 @@
                     <hr />
                     <table>
                         <tr>
-                            <td width="150px" id="address_row">
-                                <img id="logo" src="https://ci4.googleusercontent.com/proxy/N0R0RrGA7YoMnDOEsxchIqS0Di9NX2naqNi37f3PMG0yHhTNrBlaoIPyooZ_JEIB1xiVbRkBujFi1UjXQyXRyy0Jh4CZmXhqjQPA=s0-d-e1-ft#https://dl.dropboxusercontent.com/u/34547970/logo.png" alt="Mobile Greetings" />
-                                <p class="address">
-                                    1600 Pennsylvania Ave.
-                                    <br />Persnickity, AL 12393
-                                    <br />(607) 351-7172
+                            <td id="address_row">
+                                <img id="logo" src="http://bahbah2e.azurewebsites.net/images/logo.png" alt="Mobile Greetings" alt="Mobile Greetings" />
+                                <p class="address" style="width: 385px">
+                                    1600 Pennsylvania Ave.<br />
+                                    Persnickity, AL 12393<br />
+                                    (607) 351-7172
                                 </p>
                             </td>
                             <td colspan="2" id="statement_row">

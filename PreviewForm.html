@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Load type resoures required by Mobile Greetings brand -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:300,500italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,500italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
 
     <!--Adobe Edge Runtime-->
@@ -35,10 +35,9 @@
     <script>
         AdobeEdge.loadComposition('LittleBlessing', 'EDGE-696761484', {
             scaleToFit: "both",
-            centerStage: "none",
-
-            width: "300px",
-            height: "200px"
+            centerStage: "horizontally",
+            width: "800px",
+            height: "533px"
         }, {
             dom: []
         }, {
@@ -49,13 +48,17 @@
     <!-- Load styles required by Mobile Greetings brand -->
     <link rel="stylesheet" href="styles/mgreetings.css" type="text/css" />
     <link rel="stylesheet" href="styles/mgreetings_forms.css" type="text/css" />
+    <link rel="stylesheet" href="styles/copyright.css" type="text/css" />
+    
 
 </head>
 
 <body>
     <div id="container">
-        <article>
+        <nav>
             <img id="logo" src="images/logo.png" alt="Mobile Greetings" />
+        </nav>
+        <article>        
 
             <!--Adobe Edge Animate Card-->
             <div id="card">
@@ -65,40 +68,54 @@
 
             <!--Personalization Form-->
             <form action="/send-card" method="post">
-                <div class="form_label_value_pair">
-                    <label for="sender_name">Sender Name</label>
-                    <input required type="text" id="sender_name" />
+                
+                <div id="sender_receiver_block">
+                    
+                    <!--Sender Name-->
+                    <div class="form_label_value_pair">
+                        <label for="sender_name">Your Name</label>
+                        <input required type="text" id="sender_name" />
+                    </div>
+
+                    <!--Sender Email-->
+                    <div class="form_label_value_pair">
+                        <label for="sender_name">Your Email</label>
+                        <input required type="email" id="sender_email" />
+                    </div>
+
+                    <!--Recipient Name-->
+                    <div class="form_label_value_pair">
+                        <label for="recipient_name">Receiver's Name</label>
+                        <input required type="text" id="recipient_name" />
+                    </div>
+
+                    <!--Recipient Email-->
+                    <div class="form_label_value_pair">
+                        <label for="recipient_email">Receiver's Email</label>
+                        <input required type="email" id="recipient_email" />
+                    </div>
+                    
                 </div>
-
-                <div class="form_label_value_pair">
-                    <label for="sender_name">Sender Email</label>
-                    <input required type="email" id="sender_email" />
+                
+                <div id="date_message_block">
+                    
+                    <!--Send Date-->
+                    <div class="form_label_value_pair">
+                        <label for="send_date">Send Date</label>
+                        <input required type="date" id="send_date"> </input>
+                    </div>
+                    
+                    <!--Personal Message-->
+                    <div class="form_label_value_pair">
+                        <label for="personalized_greeting">Personal Message</label>
+                        <!--rows="9" cols="55"--> 
+                        <textarea required type="text" id="personalized_entry_box" ></textarea>
+                    </div>                
                 </div>
-
-                <div class="form_label_value_pair">
-                    <label for="recipient_name">Recipient Name</label>
-                    <input required type="text" id="recipient_name" />
-                </div>
-
-                <div class="form_label_value_pair">
-                    <label for="recipient_email">Recipient Email</label>
-                    <input required type="email" id="recipient_email" />
-                </div>
-
-                <div class="form_label_value_pair">
-                    <label for="personalized_greeting">Personalized Greeting</label>
-                    <input required type="text" id="personalized_entry_box" />
-                </div>
-
-                <div class="form_label_value_pair">
-                    <label for="send_date">Recipient Email</label>
-                    <input required type="date" id="send_date"> </input>
-                </div>
-
-                <div>
-                    <button type="submit">preview</button>
-
-                    <button type="submit">send card</button>
+                <div id="button_block">
+                    <button id="preview_button" ><a href="http://bahbah2e.azurewebsites.net">preview card</a></button>
+                    <button id="send_button">send card</button>
+                    <p id="form_summary">We will send the greeting to (receiver's name) on (date)</p>
                 </div>
             </form>
 
