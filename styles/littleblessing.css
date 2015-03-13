@@ -4,13 +4,13 @@
 /* Type kit references */
 .greeting {
     text-shadow: 2px 2px 0px #edd1db;
-    font-family: "tekton-pro-condensed", sans-serif;
+    font-family: "tekton-pro-condensed", 'Arial', sans-serif;
     font-style: normal;
     font-weight: 700;
 }
 
 .card_type {
-    font-family: "tekton-pro";
+    font-family: "tekton-pro", 'Arial', sans-serif;
     font-style: normal;
     font-weight: 700;
 }
