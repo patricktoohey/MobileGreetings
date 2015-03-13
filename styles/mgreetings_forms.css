@@ -3,18 +3,40 @@
 
 nav {
     width: 100%;
-    background-color: #6D6E70;
     height: 6em;
     margin-top: 0;
     padding-top: 10px;
 }
 
+nav ul {
+    vertical-align: baseline;
+    list-style: none;
+    display: block;
+}
+
+li {
+    float: left;
+    display: inline;
+    line-height: 75px;
+}
+
+li a {
+    color: #6DA673;
+    font-family: 'Roboto Slab', 'Times New Roman', serif;
+    font-weight: 700;
+    font-size: 1.424em;
+    line-height: 120%;
+    text-align: center;
+    padding-left: 3em;
+}
+
 #logo {
     margin-top: 0;
     margin-top: 10px;
+    margin-left: 0;
 }
+
 #card {
-    float: clear;
     width: 90%;
     box-sizing: border-box !important;
 }
@@ -104,7 +126,8 @@ footer {
     clear: both;
 }
 
-button {
+button,
+#button_block a {
     background-color: #6DA673;
     border-radius: 10px;
     color: #ffffff;
@@ -119,14 +142,10 @@ button {
     width: 49%;
 }
 
-button a {
-    color: #ffffff;
-}
-
 #preview_button {
     float: left;
     width: 49%;
-    background-color: #97BF9A;
+    background-color: #97BF9A !important;
 }
 
 #send_button {
@@ -144,33 +163,43 @@ button a {
         font-size: 1.266em;
     }
 
-    #button_block {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    button {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
+    button,
     select,
-    input {
-        width: 100%;
-    }
-    
-    #sender_receiver_block {
-        width: 100%;
-    }
-
+    input,
+    #button_block,
+    #sender_receiver_block,
     #date_message_block {
         width: 100%;
     }
-    
+
     #form_summary {
         width: 100%;
-        float: clear;
+        clear: both;
+    }
+
+    button,
+    #button_block {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #gallery,
+    #about {
+        display: none;
+    }
+
+}
+
+/* Minimum width, stack buttons */
+@media screen and (max-width: 300px) {
+    
+    #preview_button {
+        clear: both;
+        width: 100%;
+    }
+
+    #send_button {
+        clear: both;
+        width: 100%;
     }
 }

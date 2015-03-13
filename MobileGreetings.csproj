@@ -43,6 +43,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="PreviewForm.html" />
+    <Content Include="styles\copyright.css" />
     <Content Include="styles\littleblessing.css" />
     <Content Include="styles\mgreetings.css" />
     <Content Include="styles\mgreetings_forms.css" />

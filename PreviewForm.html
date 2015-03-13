@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en">
 
@@ -45,18 +45,26 @@
         });
     </script>
     <!--Adobe Edge Runtime End-->
+    
     <!-- Load styles required by Mobile Greetings brand -->
     <link rel="stylesheet" href="styles/mgreetings.css" type="text/css" />
     <link rel="stylesheet" href="styles/mgreetings_forms.css" type="text/css" />
-    <link rel="stylesheet" href="styles/copyright.css" type="text/css" />
-    
+    <link rel="stylesheet" href="styles/copyright.css" type="text/css" />    
 
 </head>
 
 <body>
     <div id="container">
         <nav>
-            <img id="logo" src="images/logo.png" alt="Mobile Greetings" />
+            <ul>
+                <li>
+                    <img id="logo" src="images/logo.png" alt="Mobile Greetings" />
+                </li>
+                <li>
+                    <a id="gallery">Gallery</a>
+                </li>
+                <li><a id="about">About</a></li>
+            </ul>
         </nav>
         <article>        
 
@@ -113,7 +121,7 @@
                     </div>                
                 </div>
                 <div id="button_block">
-                    <button id="preview_button" ><a href="http://bahbah2e.azurewebsites.net">preview card</a></button>
+                    <a id="preview_button" href="http://bahbah2e.azurewebsites.net">preview card</a>
                     <button id="send_button">send card</button>
                     <p id="form_summary">We will send the greeting to (receiver's name) on (date)</p>
                 </div>
